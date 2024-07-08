@@ -10,7 +10,7 @@ function FlightCard() {
     const history = useHistory();
 
     useEffect(() => {
-        fetch('/api/flights')
+        fetch('https://flightwebsite-backend.onrender.com/api/flights')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch flight data');
