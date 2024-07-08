@@ -12,7 +12,6 @@ const Signup = () => {
   const[password,setPassword]=useState("")
   const[conpassword,setConpassword]=useState("");
   const [showModal, setShowModal] = useState(false);
-  // const[recValue,setRecValue]=useState("");
   const[successMessage,setSuccessMessage]=useState("");
   const [errorMessage, setErrorMessage] = useState('');
   const submitForm=async (e)=>{
@@ -23,7 +22,7 @@ const Signup = () => {
     }
     try{
 
-      const response = await axios.post("http://localhost:5000/api/auth/signup", {
+      const response = await axios.post("https://flightwebsite-backend.onrender.com/api/auth/signup", {
         username: userName,
         email,
         password,
