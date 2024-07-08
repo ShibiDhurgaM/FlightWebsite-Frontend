@@ -98,9 +98,7 @@ const Payment = () => {
           >
             <button className='primary-btn2'>Pay Now</button>
           </StripeCheckout>
-          // {loading && <p>Loading...</p>}
-          // {paymentStatus === 'success' && <p>Payment successful!</p>}
-          // {paymentStatus === 'failed' && <p>Payment failed!</p>}
+        
         </form>
       </div>
       <Footer />
