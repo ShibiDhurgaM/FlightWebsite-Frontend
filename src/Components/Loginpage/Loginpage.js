@@ -17,7 +17,7 @@ const Loginpage = ({ setIsAuthenticated }) => {
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", {
+      const response = await axios.post("https://flightwebsite-backend.onrender.com/api/auth/login", {
         email,
         password,
       });
