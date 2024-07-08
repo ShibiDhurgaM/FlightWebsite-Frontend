@@ -87,7 +87,7 @@ const Payment = () => {
           </div>
           <StripeCheckout
             name="Voyage"
-            image="/images/Voyage.png"
+            image="/images/voyage.png"
             billingAddress
             shippingAddress
             description="Your bill is 20000 rupees"
