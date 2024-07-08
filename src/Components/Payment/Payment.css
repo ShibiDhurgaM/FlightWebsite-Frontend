@@ -1,4 +1,4 @@
-/* Styles for the payment sign box */
+
 .payment__sign-box {
   width: 50%;
   margin: auto;
@@ -9,10 +9,10 @@
   align-items: center;
 }
 
-/* Styles for the form inside sign-box */
+
 .payment__forms {
   width: 100%;
-  max-width: 400px; /* Limit form width for better readability on smaller screens */
+  max-width: 400px; 
 }
 
 .payment__forms input[type="text"],
@@ -20,7 +20,7 @@
 .payment__forms input[type="tel"] {
   width: calc(100% - 20px);
   padding: 10px;
-  margin: 10px 0; /* Adjust margin for better spacing */
+  margin: 10px 0; 
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
