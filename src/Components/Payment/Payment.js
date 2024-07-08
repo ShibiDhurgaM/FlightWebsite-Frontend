@@ -21,7 +21,7 @@ const Payment = () => {
     event.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/stripe/payment', {
+      const res = await axios.post('https://flightwebsite-backend.onrender.com/api/stripe/payment', {
         tokenId: stripeToken.id,
         amount: 20000,
       });
@@ -40,7 +40,7 @@ const Payment = () => {
       if (stripeToken) {
         setLoading(true);
         try {
-          const res = await axios.post('http://localhost:5000/api/stripe/payment', {
+          const res = await axios.post('https://flightwebsite-backend.onrender.com/api/stripe/payment', {
             tokenId: stripeToken.id,
             amount: 20000,
           });
