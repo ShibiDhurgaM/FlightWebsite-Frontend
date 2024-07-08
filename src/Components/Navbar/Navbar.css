@@ -1,0 +1,165 @@
+/* Navbar.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+.navbar {
+  background: #FEBE10;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 10vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.applogo {
+  width: 150px;
+  height: auto;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon.active {
+  display:contents;
+  z-index: 500;
+}
+
+.menu-icon svg {
+  font-size: 24px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 500; 
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu li a {
+  color: #140101;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-out;
+  opacity: 0.8;
+  text-decoration: none; 
+}
+
+.nav-menu li a:hover {
+  color: #f2f2f1fb;
+}
+
+.login-area {
+  display: flex;
+  align-items: center;
+}
+
+.login-area ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.login-area li {
+  margin-left: 20px;
+}
+
+.login-area li a {
+  font-size: 16px;
+  color: #777777;
+  opacity: 0.8;
+  text-decoration: none; 
+  display: flex; 
+  align-items: center; 
+}
+
+.login-area li a i {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: -100%;
+    width: 100%;
+    background: #a5a7a4;
+   
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin: 20px 0;
+  }
+
+  .login-area {
+    position: relative;
+    display: flex;
+    align-items: center; 
+  }
+
+  .login-area ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background: #a5a7a4; 
+    text-align: center; 
+    width: 150px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    display: none;
+  }
+
+  .login-area:hover ul {
+    display: block; 
+  }
+
+  .login-area li {
+    margin: 10px 0; 
+  }
+
+  .login-area li a {
+    color: #140101;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    display: block; 
+  }
+}

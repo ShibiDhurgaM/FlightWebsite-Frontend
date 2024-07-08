@@ -1,0 +1,51 @@
+/* Styles for the payment sign box */
+.payment__sign-box {
+  width: 50%;
+  margin: auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for the form inside sign-box */
+.payment__forms {
+  width: 100%;
+  max-width: 400px; /* Limit form width for better readability on smaller screens */
+}
+
+.payment__forms input[type="text"],
+.payment__forms input[type="email"],
+.payment__forms input[type="tel"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0; /* Adjust margin for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  background-color: #fff2cc;
+}
+
+.payment__forms input[type="text"]:focus,
+.payment__forms input[type="email"]:focus,
+.payment__forms input[type="tel"]:focus {
+  border-color: #FEBE10; 
+}
+
+.payment__forms p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .payment__sign-box {
+    width: 80%;
+    padding: 20px; 
+  }
+
+  .payment__forms {
+    max-width: 100%; 
+  }
+}

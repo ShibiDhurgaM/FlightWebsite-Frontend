@@ -1,0 +1,84 @@
+.image-heading {
+  background-image: url("../../../public/images/header-11.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #717171;
+  height: 30vh;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.image-heading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.image-heading h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.image-heading button {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: 400;
+  padding: 15px 30px;
+  word-spacing: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.image-heading button a {
+  color: #eec50a;
+  text-decoration: none;
+}
+
+.image-heading span {
+  text-transform: capitalize;
+  word-spacing: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+
+.image-heading button a {
+  color: #eec50a;
+  text-decoration: none;
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+  .image-heading {
+    height: 20vh;
+  }
+
+  .image-heading h1 {
+    font-size: 30px;
+  }
+
+  .image-heading button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  
+  .image-heading button a {
+    top: 5px;
+    right: 5px;
+  }
+}

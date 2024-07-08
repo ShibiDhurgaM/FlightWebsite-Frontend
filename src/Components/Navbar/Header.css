@@ -1,0 +1,74 @@
+/* Header.css */
+
+header {
+    padding: 20px;
+    background-color: rgb(252, 251, 251);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    font-size: 24px;
+    color: #FEBE10;
+    margin-right: 10px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .text a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .box {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .icons {
+      font-size: 20px;
+      margin-right: 0;
+    }
+  
+    .text {
+      margin-top: 5px;
+    }
+  }
+  
